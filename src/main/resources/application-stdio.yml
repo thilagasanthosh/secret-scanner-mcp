@@ -1,0 +1,18 @@
+spring:
+  main:
+    web-application-type: none
+    banner-mode: "off"
+  ai:
+    mcp:
+      server:
+        stdio: true
+        protocol: SSE
+
+logging:
+  level:
+    root: WARN
+    com.mcp.secretscanner: INFO
+  threshold:
+    console: "OFF"
+  file:
+    name: ${java.io.tmpdir}/secret-scanner-mcp.log
